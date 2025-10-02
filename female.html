@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+        <nav>
+       <a href="index.html"> <h1>Wyntr</h1></a>
+        <ul>
+          <ul>
+    <li><a href="male.html">Male</a></li>
+    <li><a href="female.html">Female</a></li>
+    <li><a href="search.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+</ul>
+
+        </ul>
+    </nav>
+
+<div class="container">
+    <div class="leftnav">
+        <h1>Browse our catalog</h1>
+        <ul>
+            <li><button onclick="openSection('tshirts')">T-shirts</button></li>
+            <li><button onclick="openSection('jeans')">Jeans</button></li>
+            <li><button onclick="openSection('tracksuits')">Track-Suits</button></li>
+            <li><button onclick="openSection('hoodies')">Hoodies</button></li>
+        </ul>
+    </div>
+<!-- Content container -->
+    <div class="content">
+<!-- Tshirt container -->
+        <div id="tshirts" class="section">
+            <h1>Browse a selection of our T-shirts</h1>
+
+        <div class="block"><img id="img" src="https://m.media-amazon.com/images/I/7114ZJEDoDL._UY1000_.jpg" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://ae01.alicdn.com/kf/S00629921544c4f3c8aefb25c81ac4c69n.jpg" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://images.asos-media.com/products/daisy-street-relaxed-oversized-grunge-t-shirt-in-washed-grey/204112007-1-washedgrey?$n_640w$&wid=513&fit=constrain" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+    </div>
+
+    <!--Jeans-->
+        <div id="jeans" class="section">
+        <h1>Browse a selection of our Jeans</h1>
+
+
+    
+        <div class="block"><img id="img" src="https://m.media-amazon.com/images/I/61UgEzx3q3L._UY1000_.jpg" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWkMJEJS1OJIYvXahVnx3CDbZyl20wEjNnQ&s" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://img.ltwebstatic.com/images3_pi/2024/04/07/ef/17124801206d6bb61eb1fb7c0c9f5e29a3b088620a_thumbnail_720x.webp" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+        
+        </div>
+<!-- Tracksuits -->
+       <div id="tracksuits" class="section">
+        <h1>Browse a selection of our Tracksuits</h1>
+
+
+       
+
+        <div class="block"><img id="img" src="https://www.oneteaspoon.com/cdn/shop/files/26337_BLACKKHAKI_1_91dae177-e4f2-4813-962e-bea6be18017f.jpg?v=1705636958&width=1500" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://i.pinimg.com/736x/9e/9e/e3/9e9ee35f0151783ed14665d3a4b2ffe3.jpg" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gcPj5KK5kx6U4FhvygisHshh1gOI_hh54A&s" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+        
+        </div>
+
+<!-- HOODIES -->
+        <div id="hoodies" class="section">
+        <h1>Browse a selection of our Hoodies</h1>
+
+        <div class="block"><img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrfYLzAvoTJjoTgkbjHPRmx4CtG9egsO3rwQ&s" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://m.media-amazon.com/images/I/61UpRNezT4L.jpg" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+
+        <div class="block"><img id="img" src="https://ae01.alicdn.com/kf/S1dfb71da7a544a569346440aa08f3544C.jpg_640x640Q90.jpg_.webp" alt="">
+        <p>T shirt</p>
+            <div class="links"><a href="#">Buy</a></div>
+        </div>
+            </div>
+
+<script>
+    function openSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.style.display = 'none');
+
+    // Show the clicked section
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) activeSection.style.display = 'block';
+}
+
+</script>
+</body>
+</html>
