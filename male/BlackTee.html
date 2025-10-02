@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="/wyntr/style.css">
+
+</head>
+<style>
+    .imgC{
+    width: 1280px;
+    height: 680px;
+    margin: 80px;
+    background-color: rgb(23, 23, 23);
+        margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+}
+
+#clothesimg{
+    width: 500px;
+    height: 680px;
+}
+
+.imgC h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.stripebuybutton{
+    margin-top: 120px;
+    margin-left: -160px;
+}
+
+</style>
+<body>
+ <nav>
+       <a href="/wyntr/index.html"> <h1>Wyntr</h1></a>
+        <ul>
+          <ul>
+    <li><a href="/wyntr/male.html">Male</a></li>
+    <li><a href="/wyntr/female.html">Female</a></li>
+    <li><a href="/wyntr/search.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+</ul>
+
+        </ul>
+    </nav>
+<div class="imgC">
+<img id="clothesimg" src="https://media.boohoo.com/i/boohoo/bmm65327_black_xl/male-black-oversized-boxy-grunge-homme-t-shirt/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit" alt="">
+<h1>Black Tee</h1>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<div class="stripebuybutton">
+<stripe-buy-button
+  buy-button-id="buy_btn_1SDdGuAcUeusGbktjZK73tHg"
+  publishable-key="pk_test_51RUFFmAcUeusGbktt74LyHYq8OByjdXdNzWnfeOuMl8Hr4RCtJZXaswwrwTZPzo7RWDsBhAvHSgaAJNTEXA6VgBm001onkvP0Q"
+>
+</stripe-buy-button>
+</div>
+</div>
+
+</body>
