@@ -1,8 +1,8 @@
 <?php
-// 1. Database Connection
+
 $servername = "localhost";
-$username = "root";      // change if needed
-$password = "";          // change if needed
+$username = "root";     
+$password = "";         
 $dbname = "my_search_database";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,11 +11,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// 2. Get search query
 if (isset($_GET['query'])) {
-    $search_query = $conn->real_escape_string($_GET['query']);
-
-    // 3. Search in DB
+    $search_query = $conn->real_escape_string($_GET['query'])
+        
     $sql = "SELECT page FROM products 
             WHERE name LIKE '%$search_query%' 
             OR description LIKE '%$search_query%' 
@@ -27,11 +25,10 @@ if (isset($_GET['query'])) {
         $row = $result->fetch_assoc();
         $page = $row['page'];
 
-        // Redirect to the HTML page stored in DB
         header("Location: $page");
         exit;
     } else {
-        // If no match, go to notfound.html
+
         header("Location: notfound.html");
         exit;
     }
@@ -67,4 +64,5 @@ $conn->close();
         <input type="submit" value="Search">
     </form>
 </body>
+
 </html>
